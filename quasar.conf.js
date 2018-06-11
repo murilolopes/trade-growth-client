@@ -7,14 +7,13 @@ module.exports = function (ctx) {
       'axios'
     ],
     css: [
-      'app.styl'
+      'app.styl',
+      'material-kit.scss'
     ],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons' // optional, you are not bound to it
-      // 'ionicons',
-      // 'mdi',
-      // 'fontawesome'
+      'material-icons',
+      'fontawesome'
     ],
     supportIE: false,
     build: {
@@ -38,37 +37,8 @@ module.exports = function (ctx) {
       // port: 8080,
       open: true // opens browser window automatically
     },
-    // framework: 'all' --- includes everything; for dev only!
-    framework: {
-      components: [
-        'QLayout',
-        'QLayoutHeader',
-        'QLayoutDrawer',
-        'QPageContainer',
-        'QPage',
-        'QToolbar',
-        'QToolbarTitle',
-        'QBtn',
-        'QIcon',
-        'QList',
-        'QListHeader',
-        'QItem',
-        'QItemMain',
-        'QItemSide'
-      ],
-      directives: [
-        'Ripple'
-      ],
-      // Quasar plugins
-      plugins: [
-        'Notify'
-      ]
-      // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
-      // i18n: 'de' // Quasar language
-    },
-    // animations: 'all' --- includes all animations
-    animations: [
-    ],
+    framework: 'all',
+    animations: 'all',
     pwa: {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
