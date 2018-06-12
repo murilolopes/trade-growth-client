@@ -15,10 +15,8 @@ export default [
     ]
   },
   {
-    path: '/home2',
-    children: [
-      { path: '', component: () => import('pages/home') }
-    ]
+    path: '/login',
+    component: () => import('pages/login'),
   },
 
   { // Always leave this as last one

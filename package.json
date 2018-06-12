@@ -21,6 +21,7 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-vue": "^4.3.0",
+    "fontawesome": "^4.7.2",
     "node-sass": "^4.9.0",
     "quasar-cli": "^0.16.0",
     "sass-loader": "^7.0.3"

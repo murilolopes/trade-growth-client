@@ -4,16 +4,16 @@ module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
     plugins: [
-      'axios'
+      'axios',
     ],
     css: [
       'app.styl',
-      'material-kit.scss'
+      'material-kit.scss',
     ],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons',
-      'fontawesome'
+      //'material-icons',
+      //'fontawesome',
     ],
     supportIE: false,
     build: {
