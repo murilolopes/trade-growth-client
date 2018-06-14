@@ -26,7 +26,8 @@
 
 @if $enable-grid-classes {
   .row {
-    @include make-row();
+    display: flex;
+    flex-wrap: wrap;
   }
 
   // Remove the negative margin from default .row, then the horizontal padding

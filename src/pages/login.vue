@@ -36,7 +36,7 @@
                 </div></span>
               </div>
               <div class="card-footer justify-content-center">
-                <button @click.prevent="logar('Email')" class="btn btn-link btn-outline-primary btn-lg">Sign In</button>
+                <button @click.prevent="login()" class="btn btn-link btn-outline-primary btn-lg">Sign In</button>
               </div>
             </div>
           </div>
@@ -55,6 +55,17 @@ export default {
   methods: {
     logar (provider) {
       console.log('Logando com ' + provider)
+    },
+    login () {
+      console.log('Logando com email...')
+      
+      this.$q.loading.show()
+      
+      setTimeout(() => {
+        console.log('Logado')
+        this.$router.push('/home')
+        this.$q.loading.hide()
+      }, 3000)
     }
   }
 }

@@ -8,7 +8,7 @@ module.exports = function (ctx) {
     ],
     css: [
       'app.styl',
-      'material-kit.scss',
+      'material-kit.scss'
     ],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
