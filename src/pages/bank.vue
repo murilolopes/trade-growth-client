@@ -3,7 +3,7 @@
     <div class="card card-nav-tabs">
       <div class="card-body" style="margin-top: 10px; margin-bottom: 30px">
         <div class="tab-content text-center">
-          <div class="tab-pane" id="profile">
+          <div class="" id="profile" v-show="opened == 'hist'">
             <q-collapsible popup icon="mail" label="Inbox" sublabel="5 unread emails">
               <div>aiushdaiusdhaisuhd</div>
             </q-collapsible>
@@ -14,8 +14,9 @@
               <div>aiushdaiusdhaisuhd</div>
             </q-collapsible>
           </div>
-          <div class="tab-pane" id="messages">
+          <div class="" id="messages" v-show="opened == 'atual'">
             <div class="row">
+              <div class="">
               <q-card inline class="bigger q-ma-sm">
                 <q-card-title class="relative-position">
                   <div class="ellipsis">Banca 007</div>
@@ -24,10 +25,14 @@
                   </div>
                 </q-card-title>
                 <q-card-main>
-                  <p>texto basico</p>
-                  <p class="text-faded">outro lorem da vidaadsasdasdasasdasdasdasd asdadssa.</p>
+                  <p>Risco : 2%</p>
+                  <p class="text-faded">Lote máximo(recomendado): <strong>0.06</strong></p>
+                  <p class="text-faded">Ativo predominante: <strong>USD/CAD</strong></p>
+                  <p class="text-faded">Crescimento médio: <strong><q-icon name="trending_up" />5%</strong> </p>
+                  <p class="text-faded">Quantidade média de pontos: <strong>2700 pts</strong></p>
                 </q-card-main>
               </q-card>
+            </div>
             </div>
             <br>
             <div class="row">
@@ -102,13 +107,13 @@
               <div class="nav-tabs-wrapper">
                   <ul class="nav nav-tabs" data-tabs="tabs">
                       <li class="nav-item">
-                          <a class="nav-link" href="#profile" data-toggle="tab">
+                          <a class="nav-link" @click.prevent="opened = 'hist'" data-toggle="tab">
                               <i class="material-icons">calendar_today</i>
                               Histórico
                           <div class="ripple-container"></div></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#messages" data-toggle="tab">
+                          <a class="nav-link" @click.prevent="opened = 'atual'" data-toggle="tab">
                               <i class="material-icons">chat</i>
                               Atual
                           <div class="ripple-container"></div></a>
@@ -130,7 +135,7 @@ export default {
   data () {
     return {
       stars: 4,
-      opened: false,
+      opened: 'atual',
     }
   },
 }
