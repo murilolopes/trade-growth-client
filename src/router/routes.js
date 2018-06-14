@@ -10,7 +10,8 @@ export default [
     path: '/bank',
     component: () => import('layouts/default'),
     children: [
-      { path: '', component: () => import('pages/bank') }
+      { path: '', component: () => import('pages/bank') },
+      { path: '1', component: () => import('pages/bank') }
     ]
   },
   {
@@ -18,7 +19,6 @@ export default [
     component: () => import('pages/login'),
   },
   {
-    path: '*',
-    component: () => import('pages/404')
+    path: '*', redirect: '/home'
   }
 ]
