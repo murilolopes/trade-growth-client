@@ -1,22 +1,21 @@
 <template>
-  <div class="container">
+  <div class="container" style="margin-top: -15px; margin-bottom: 50px">
     <div class="card card-nav-tabs">
-      <div class="card-body" style="margin-top: 10px; margin-bottom: 30px">
+      <div class="card-body" style="margin-bottom: 30px">
         <div class="tab-content text-center">
           <div class="" id="profile" v-show="opened == 'hist'">
-            <q-collapsible popup icon="mail" label="Inbox" sublabel="5 unread emails">
-              <div>aiushdaiusdhaisuhd</div>
+            <q-collapsible popup group="meses" icon="trending_up" label="Maio" sublabel="Alta de 10%">
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
             </q-collapsible>
-            <q-collapsible popup icon="send" label="Outbox" sublabel="Empty">
-              <div>aiushdaiusdhaisuhd</div>
+            <q-collapsible popup group="meses" icon="trending_up" label="Junho" sublabel="Alta de 15%">
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
             </q-collapsible>
-            <q-collapsible popup icon="drafts" label="Draft" sublabel="Draft a new email">
-              <div>aiushdaiusdhaisuhd</div>
+            <q-collapsible popup group="meses" icon="trending_down" label="Julho" sublabel="Queda de 4%">
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
             </q-collapsible>
           </div>
           <div class="" id="messages" v-show="opened == 'atual'">
             <div class="row">
-              <div class="">
               <q-card inline class="bigger q-ma-sm">
                 <q-card-title class="relative-position">
                   <div class="ellipsis">Banca 007</div>
@@ -32,7 +31,6 @@
                   <p class="text-faded">Quantidade média de pontos: <strong>2700 pts</strong></p>
                 </q-card-main>
               </q-card>
-            </div>
             </div>
             <br>
             <div class="row">
@@ -105,7 +103,7 @@
       <div class="card-header card-header-primary" align="center" style="margin-bottom: -40px;">
           <div class="nav-tabs-navigation">
               <div class="nav-tabs-wrapper">
-                  <ul class="nav nav-tabs" data-tabs="tabs">
+                  <ul class="nav nav-tabs justify-center" data-tabs="tabs">
                       <li class="nav-item">
                           <a class="nav-link" @click.prevent="opened = 'hist'" :class="ativo('hist')" data-toggle="tab">
                               <i class="material-icons">calendar_today</i>
@@ -115,7 +113,7 @@
                       <li class="nav-item">
                           <a class="nav-link active show" @click.prevent="opened = 'atual'" data-toggle="tab">
                               <i class="material-icons">chat</i>
-                              Atual
+                              Mês Corrente
                           <div class="ripple-container"></div></a>
                       </li>
                   </ul>
