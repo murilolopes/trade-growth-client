@@ -34,7 +34,8 @@ module.exports = function (ctx) {
       //port: 8082,
       open: true
     },
-    framework: 'all',
+    framework: 'all', 
+    directives: ['CloseOverlay'],
     pwa: {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
