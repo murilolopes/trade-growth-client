@@ -39,26 +39,26 @@
                   <q-item-main label="semana 4"/>
                   <q-item-side right>
                     <span class="text-green">
-                      5% <q-btn round dense @click.prevent="modal = true" icon="trending_up" text-color="green"></q-btn>
+                      <q-icon name="trending_up"></q-icon> 5% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="green"></q-btn>
                     </span>
                   </q-item-side>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 3"/>
                     <span class="text-red">
-                      3% <q-btn round dense @click.prevent="modal = true" icon="trending_down" text-color="red"></q-btn>
+                      <q-icon name="trending_down"></q-icon> 3% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="red"></q-btn>
                     </span>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 2"/>
                   <span class="text-green">
-                    12% <q-btn round dense @click.prevent="modal = true" icon="trending_up" text-color="green"></q-btn>
+                    <q-icon name="trending_up"></q-icon> 12% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="green"></q-btn>
                   </span>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 1"/>
                   <span class="text-green">
-                    8% <q-btn round dense @click.prevent="modal = true" icon="trending_up" text-color="green"></q-btn>
+                    <q-icon name="trending_up"></q-icon> 8% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="green"></q-btn>
                   </span>
                 </q-item>
               </q-list>
@@ -88,13 +88,6 @@
       </div>
     </div>
     <q-btn round color="success" @click.prevent="method" class="fixed" icon="plus_one" style="right: 18px; bottom: 18px"/>
-    <q-page>
-    <q-modal v-model="modal" :content-css="{padding: '50px', minWidth: '50vw'}">
-      <div class="q-display-1 q-mb-md">Basic Modal</div>
-      <p v-for="n in 25" :key="`a-${n}`">Scroll down to close</p>
-      <q-btn color="primary" @click="basicModal = false" label="Close" />
-    </q-modal>
-  </q-page>
   </div>
 </template>
 
@@ -109,7 +102,7 @@ export default {
       stars: 4,
       opened: 'atual',
       basicModal: false,
-      modal: false,
+      modal: true,
     }
   },
   methods: {

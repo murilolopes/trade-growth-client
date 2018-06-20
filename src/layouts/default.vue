@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<q-layout>
-			<q-layout-header style="position: fixed">
+			<q-layout-header style="position: fixed" class="navbar navbar-expand-lg bg-primary">
 				<q-toolbar color="primary">
 					<q-btn flat dense round aria-label="Menu">
 						<q-icon name="reply" />
@@ -27,6 +27,10 @@
 					<q-item>
 						<q-item-side icon="school"/>
 						<router-link to="/bank"><q-item-main label="Bank"/></router-link>
+					</q-item>
+					<q-item>
+						<q-item-side icon="school"/>
+						<router-link to="/bank/week"><q-item-main label="Week"/></router-link>
 					</q-item>
 					<q-item>
 						<q-item-side icon="school"/>

@@ -35,7 +35,7 @@ module.exports = function (ctx) {
       open: true
     },
     framework: 'all', 
-    directives: ['CloseOverlay'],
+    directives: ['CloseOverlay', 'Ripple'],
     pwa: {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
