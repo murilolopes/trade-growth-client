@@ -1,19 +1,42 @@
 <template>
   <div>
     <div class="col-md-4" @clicl.prevent="method">
-      <router-link to="/bank">
-        <q-card inline class="q-ma-sm">
-          <q-card-media>
-            <img src="~assets/img/bg.jpg">
-          </q-card-media>
-          <q-card-title>
-            Bank 1 
-            <span slot="right" class="row items-center text-green">
-              <q-icon name="trending_up" /> 5% ($ 1.500,00)
-            </span>
-          </q-card-title>
-        </q-card>
-      </router-link>
+      <q-card inline class="q-ma-sm">
+        <q-card-media>
+          <img src="~assets/img/bg.jpg">
+          <q-card-title slot="overlay">
+          Bank 1
+          <span slot="right" class="row items-center text-white">
+            <q-icon name="trending_up" /> 5% ($ 1.500,00)
+          </span>
+        </q-card-title>
+        </q-card-media>
+        <q-card-separator />
+        <q-card-actions class="justify-center">
+          <q-btn flat color="primary" icon="visibility" to="/bank" />
+          <q-btn flat color="primary" icon="edit" />
+          <q-btn flat color="primary" icon="clear" />
+        </q-card-actions>
+      </q-card>
+    </div>
+    <div class="col-md-4" @clicl.prevent="method">
+      <q-card inline class="q-ma-sm">
+        <q-card-media>
+          <img src="~assets/img/bg.jpg">
+        <q-card-title>
+          Bank 1 
+          <span slot="right" class="row items-center text-green">
+            <q-icon name="trending_up" /> 5% ($ 1.500,00)
+          </span>
+        </q-card-title>
+        </q-card-media>
+        <q-card-separator />
+        <q-card-actions class="justify-center">
+          <q-btn flat color="primary" icon="visibility" to="/bank" />
+          <q-btn flat color="primary" icon="edit" />
+          <q-btn flat color="primary" icon="clear" />
+        </q-card-actions>
+      </q-card>
     </div>
     <div class="col-md-4">
       <router-link to="/bank">
