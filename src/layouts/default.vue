@@ -3,12 +3,12 @@
 		<q-layout>
 			<q-layout-header style="position: fixed" class="navbar navbar-expand-lg bg-primary">
 				<q-toolbar color="primary">
-					<q-btn flat dense round aria-label="Menu">
+					<q-btn flat dense round aria-label="Menu" v-show="$router.history.current.path != '/home'" @click.prevent="$router.go(-1)">
 						<q-icon name="reply" />
 					</q-btn>
 
 					<q-toolbar-title align="center">
-						Title
+						My Fx Bank
 					</q-toolbar-title>
 
 					<q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">

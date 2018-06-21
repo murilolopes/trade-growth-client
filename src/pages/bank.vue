@@ -39,26 +39,26 @@
                   <q-item-main label="semana 4"/>
                   <q-item-side right>
                     <span class="text-green">
-                      <q-icon name="trending_up"></q-icon> 5% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="green"></q-btn>
+                      <q-icon name="trending_up"></q-icon> 5% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="green"></q-btn>
                     </span>
                   </q-item-side>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 3"/>
                     <span class="text-red">
-                      <q-icon name="trending_down"></q-icon> 3% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="red"></q-btn>
+                      <q-icon name="trending_down"></q-icon> 3% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="red"></q-btn>
                     </span>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 2"/>
                   <span class="text-green">
-                    <q-icon name="trending_up"></q-icon> 12% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="green"></q-btn>
+                    <q-icon name="trending_up"></q-icon> 12% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="green"></q-btn>
                   </span>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 1"/>
                   <span class="text-green">
-                    <q-icon name="trending_up"></q-icon> 8% <q-btn round dense @click.prevent="modal = true" icon="find_in_page" text-color="green"></q-btn>
+                    <q-icon name="trending_up"></q-icon> 8% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="green"></q-btn>
                   </span>
                 </q-item>
               </q-list>
