@@ -5,9 +5,9 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank 1 
+          Bank 1 ($ 1.500,00)
           <span slot="right" class="row items-center text-green">
-            +5% ($ 1.500,00)
+            +5%
           </span>
         </q-card-title>
         </q-card-media>
@@ -24,9 +24,9 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank 2 
+          Bank 2 ($ 740,00)
           <span slot="right" class="row items-center text-red">
-            -2% ($ 740,00)
+            -2%
           </span>
         </q-card-title>
         </q-card-media>
@@ -43,9 +43,9 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank 3 
+          Bank 3 ($ 3.258,00)
           <span slot="right" class="row items-center text-green">
-            +12% ($ 3.258,00)
+            +12%
           </span>
         </q-card-title>
         </q-card-media>
@@ -62,9 +62,9 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank Name 
+          Bank Name ($ 0,00)
           <span slot="right" class="row items-center text-green">
-            +0% ($ 0,00)
+            +0%
           </span>
         </q-card-title>
         </q-card-media>
