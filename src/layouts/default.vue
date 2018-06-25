@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<q-layout>
-			<q-layout-header style="position: fixed">
+			<q-layout-header style="position: fixed; opacity: .9">
 				<q-toolbar color="primary" glossy>
 					<q-btn flat dense round aria-label="Menu" v-show="$router.history.current.path != '/home'" @click.prevent="$router.go(-1)">
 						<q-icon name="reply" />
