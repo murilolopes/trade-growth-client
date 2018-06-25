@@ -3,30 +3,33 @@
 		<div class="card card-nav-tabs">
 			<div class="card-body" style="margin-bottom: 30px">
 				<div class="tab-content text-center">
-					<div class="row">
-						<q-card inline class="col-md-4 col-sm-4">
-							<q-card-title class="relative-position">
-								<div class="ellipsis">Semana 4</div>
-								<div slot="right" class="row items-center">
-									<q-icon name="trending_up"/> 5%
-								</div>
-							</q-card-title>
-							<q-card-main>
-								<div>
-									<p>Lote médio: <strong>0.06</strong></p>
-									<p>Ativo predominante: <strong>USD/CAD</strong></p>
-									<p>Média de lucro por trade: <strong><q-icon name="attach_money" />12,28</strong> </p>
-									<p>Média de pontos por trade: <strong>270</strong></p>
-									<p>Maior lucro: <strong><q-icon name="attach_money" />25</strong> </p>
-									<p>Maior perda: <strong><q-icon name="attach_money" />7</strong> </p>
-								</div>
-							</q-card-main>
-						</q-card>
+					<div class="">
+						<q-collapsible>
+							<template slot="header">
+								<q-item-main class="text-gree" label="Semana 4" />
+								<q-chip color="green" class="q-mr-sm"> +5% </q-chip>
+							</template>
+							<div>
+
+								<q-card inline class="col-md-4 col-sm-4">
+									<q-card-main>
+										<div>
+											<p>Lote médio: <strong>0.06</strong></p>
+											<p>Ativo predominante: <strong>USD/CAD</strong></p>
+											<p>Média de lucro por trade: <strong><q-icon name="attach_money" />12,28</strong> </p>
+											<p>Média de pontos por trade: <strong>270</strong></p>
+											<p>Maior lucro: <strong><q-icon name="attach_money" />25</strong> </p>
+											<p>Maior perda: <strong><q-icon name="attach_money" />7</strong> </p>
+										</div>
+									</q-card-main>
+								</q-card>
+							</div>
+						</q-collapsible>
 					</div>
 					<br>
 					<div>
 						<q-scroll-area style="height: 474px;">
-							<q-collapsible>
+							<q-collapsible v-for="n in 15">
 								<template slot="header">
 									<q-chip color="primary" small class="q-mr-sm">
 										EUR/USD
@@ -49,150 +52,7 @@
 										</q-card-actions>
 									</q-card>
 								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
-							<q-collapsible>
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-green" label="Buy 0.02" />
-								</template>
-								<div>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-							</q-collapsible>
+							</q-collapsible>							
 						</q-scroll-area>
 					</div>
 				</div>
@@ -212,7 +72,7 @@
 					</div>
 				</div>
 			</div>
-			<q-btn round color="success" @click.prevent="method" class="fixed" icon="plus_one" style="right: 18px; bottom: 18px"/>
+			<q-btn round color="primary" @click.prevent="method" class="fixed" icon="fas fa-plus" style="right: 18px; bottom: 18px"/>
 		</div>
 	</template>
 

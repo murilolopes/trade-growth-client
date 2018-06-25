@@ -1,87 +1,78 @@
 <template>
   <div>
-    <div class="col-md-4" @clicl.prevent="method">
-      <q-card inline class="q-ma-sm">
-        <q-card-media>
-          <img src="~assets/img/bg.jpg">
-          <q-card-title slot="overlay">
-          Bank 1
-          <span slot="right" class="row items-center text-white">
-            <q-icon name="trending_up" /> 5% ($ 1.500,00)
-          </span>
-        </q-card-title>
-        </q-card-media>
-        <q-card-separator />
-        <q-card-actions class="justify-center">
-          <q-btn flat color="primary" icon="visibility" to="/bank" />
-          <q-btn flat color="primary" icon="edit" />
-          <q-btn flat color="primary" icon="clear" />
-        </q-card-actions>
-      </q-card>
-    </div>
-    <div class="col-md-4" @clicl.prevent="method">
+    <div class="col-md-4">
       <q-card inline class="q-ma-sm">
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
           Bank 1 
           <span slot="right" class="row items-center text-green">
-            <q-icon name="trending_up" /> 5% ($ 1.500,00)
+            +5% ($ 1.500,00)
           </span>
         </q-card-title>
         </q-card-media>
         <q-card-separator />
         <q-card-actions class="justify-center">
-          <q-btn flat color="primary" icon="visibility" to="/bank" />
-          <q-btn flat color="primary" icon="edit" />
-          <q-btn flat color="primary" icon="clear" />
+          <q-btn flat color="primary" icon="fas fa-eye" to="/bank" />
+          <q-btn flat color="primary" icon="fas fa-edit" />
+          <q-btn flat color="primary" icon="fas fa-trash" />
         </q-card-actions>
       </q-card>
     </div>
     <div class="col-md-4">
-      <router-link to="/bank">
-        <q-card inline class="q-ma-sm">
-          <q-card-media>
-            <img src="~assets/img/bg.jpg">
-          </q-card-media>
-          <q-card-title>
-            Bank 2 
-            <span slot="right" class="row items-center text-red">
-              <q-icon name="trending_down" /> 2% ($ 900,00)
-            </span>
-          </q-card-title>
-        </q-card>
-      </router-link>
-    </div>
-    <div class="col-md-4" @clicl.prevent="method">
-      <router-link to="/bank">
-        <q-card inline class="q-ma-sm">
-          <q-card-media>
-            <img src="~assets/img/bg.jpg">
-          </q-card-media>
-          <q-card-title>
-            Bank 3 
-            <span slot="right" class="row items-center text-green">
-              <q-icon name="trending_up" /> 14% ($ 2.300,00)
-            </span>
-          </q-card-title>
-        </q-card>
-      </router-link>
+      <q-card inline class="q-ma-sm">
+        <q-card-media>
+          <img src="~assets/img/bg.jpg">
+        <q-card-title>
+          Bank 2 
+          <span slot="right" class="row items-center text-red">
+            -2% ($ 740,00)
+          </span>
+        </q-card-title>
+        </q-card-media>
+        <q-card-separator />
+        <q-card-actions class="justify-center">
+          <q-btn flat color="primary" icon="fas fa-eye" to="/bank" />
+          <q-btn flat color="primary" icon="fas fa-edit" />
+          <q-btn flat color="primary" icon="fas fa-trash" />
+        </q-card-actions>
+      </q-card>
     </div>
     <div class="col-md-4">
-      <router-link to="/bank">
-        <q-card inline class="q-ma-sm">
-          <q-card-media>
-            <img src="~assets/img/bg.jpg">
-          </q-card-media>
-          <q-card-title>
-            Bank 4 
-            <span slot="right" class="row items-center text-red">
-              <q-icon name="trending_down" /> 7% ($ 500,00)
-            </span>
-          </q-card-title>
-        </q-card>
-      </router-link>
+      <q-card inline class="q-ma-sm">
+        <q-card-media>
+          <img src="~assets/img/bg.jpg">
+        <q-card-title>
+          Bank 3 
+          <span slot="right" class="row items-center text-green">
+            +12% ($ 3.258,00)
+          </span>
+        </q-card-title>
+        </q-card-media>
+        <q-card-separator />
+        <q-card-actions class="justify-center">
+          <q-btn flat color="primary" icon="fas fa-eye" to="/bank" />
+          <q-btn flat color="primary" icon="fas fa-edit" />
+          <q-btn flat color="primary" icon="fas fa-trash" />
+        </q-card-actions>
+      </q-card>
+    </div>
+    <div class="col-md-4" disabled="disabled">
+      <q-card inline class="q-ma-sm">
+        <q-card-media>
+          <img src="~assets/img/bg.jpg">
+        <q-card-title>
+          Bank Name 
+          <span slot="right" class="row items-center text-green">
+            +0% ($ 0,00)
+          </span>
+        </q-card-title>
+        </q-card-media>
+        <q-card-separator />
+        <q-card-actions class="justify-center">
+          <q-btn flat color="primary" icon="fas fa-plus" />
+        </q-card-actions>
+      </q-card>
     </div>
   </div>
 </template>
@@ -92,11 +83,6 @@ export default {
   data () {
     return {
       stars: 4
-    }
-  },
-  methods: {
-    method () {
-      console.log('Abri o formulário de cadastro de banca')
     }
   }
 }

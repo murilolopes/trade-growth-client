@@ -4,23 +4,35 @@
       <div class="card-body" style="margin-bottom: 30px">
         <div class="tab-content text-center">
           <div class="" id="profile" v-show="opened == 'hist'">
-            <q-collapsible popup group="meses" icon="trending_up" label="Maio" sublabel="Alta de 10%">
+            <q-collapsible popup>
+              <template slot="header">
+                <q-chip color="green" class="q-mr-sm"> +5% </q-chip>
+                <q-item-main class="text-green" label="Julho" />
+              </template>
               <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
             </q-collapsible>
-            <q-collapsible popup group="meses" icon="trending_up" label="Junho" sublabel="Alta de 15%">
-              <div>aiushdaiusdhaisuhd</div>
+            <q-collapsible popup>
+              <template slot="header">
+                <q-chip color="green" class="q-mr-sm"> +15% </q-chip>
+                <q-item-main class="text-green" label="Junho" />
+              </template>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
             </q-collapsible>
-            <q-collapsible popup group="meses" icon="trending_down" label="Julho" sublabel="Queda de 4%">
-              <div>aiushdaiusdhaisuhd</div>
+            <q-collapsible popup>
+              <template slot="header">
+                <q-chip color="red" class="q-mr-sm"> -9% </q-chip>
+                <q-item-main class="text-red" label="Maio" />
+              </template>
+              <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
             </q-collapsible>
           </div>
           <div class="" id="messages" v-show="opened == 'atual'">
             <div class="row">
               <q-card inline class="bigger q-ma-sm">
                 <q-card-title class="relative-position">
-                  <div class="ellipsis">Banca 007</div>
-                  <div slot="right" class="row items-center">
-                    <q-icon name="attach_money" /> 1500
+                  <div class="ellipsis">Banca 1</div>
+                  <div slot="right" class="row items-center text-green">
+                    <q-icon name="attach_money" /> 31.500,00
                   </div>
                 </q-card-title>
                 <q-card-main>
@@ -39,26 +51,26 @@
                   <q-item-main label="semana 4"/>
                   <q-item-side right>
                     <span class="text-green">
-                      <q-icon name="trending_up"></q-icon> 5% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="green"></q-btn>
+                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
                     </span>
                   </q-item-side>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 3"/>
                     <span class="text-red">
-                      <q-icon name="trending_down"></q-icon> 3% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="red"></q-btn>
+                      -3% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="red"></q-btn>
                     </span>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 2"/>
                   <span class="text-green">
-                    <q-icon name="trending_up"></q-icon> 12% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="green"></q-btn>
+                    +12% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
                   </span>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 1"/>
                   <span class="text-green">
-                    <q-icon name="trending_up"></q-icon> 8% <q-btn round dense to="/bank/week" icon="find_in_page" text-color="green"></q-btn>
+                    +8% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
                   </span>
                 </q-item>
               </q-list>
