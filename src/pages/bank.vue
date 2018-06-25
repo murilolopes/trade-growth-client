@@ -1,5 +1,5 @@
 <template>
-  <div class="container" style="margin-top: -15px; margin-bottom: 50px">
+  <div class="container" style="margin-bottom: 50px">
     <div class="card card-nav-tabs">
       <div class="card-body" style="margin-bottom: 30px">
         <div class="tab-content text-center">
@@ -83,15 +83,15 @@
               <div class="nav-tabs-wrapper">
                   <ul class="nav nav-tabs justify-center" data-tabs="tabs">
                       <li class="nav-item">
-                          <a class="nav-link" @click.prevent="opened = 'hist'" data-toggle="tab">
-                              <!--<q-icon name="fas fa-calendar-check fa-2x" />-->
-                              Histórico
+                          <a class="nav-link active show" @click.prevent="opened = 'atual'" data-toggle="tab">
+                              <q-icon name="fas fa-hand-holding-usd" />
+                              Mês Corrente
                           <div class="ripple-container"></div></a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active show" @click.prevent="opened = 'atual'" data-toggle="tab">
-                              <!--<i class="material-icons">chat</i>-->
-                              Mês Corrente
+                          <a class="nav-link" @click.prevent="opened = 'hist'" data-toggle="tab">
+                              <q-icon name="fas fa-calendar-check" />
+                              Histórico
                           <div class="ripple-container"></div></a>
                       </li>
                   </ul>
@@ -99,7 +99,7 @@
           </div>
       </div>
     </div>
-    <q-btn round color="success" @click.prevent="method" class="fixed" icon="plus_one" style="right: 18px; bottom: 18px"/>
+    <q-btn round color="primary" @click.prevent="method" class="fixed" icon="fa fa-plus" style="right: 18px; bottom: 18px"/>
   </div>
 </template>
 

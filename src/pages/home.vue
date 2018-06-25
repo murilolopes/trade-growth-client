@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row" style="margin-top: 10px">
+    <div class="row" style="">
       <card></card>
     </div>
   </div>

@@ -9,10 +9,10 @@
                 <h4>Sign In</h4>
                 <div class="social-line">
                   <button @click.prevent="logar('Facebook')" class="btn btn-link btn-just-icon">
-                    <i class="fa fa-facebook-square"></i>
+                    <q-icon name="fab fa-facebook-f" />
                   </button>
                   <button @click.prevent="logar('Google')" class="btn btn-link btn-just-icon">
-                    <i class="fa fa-google-plus"></i>
+                    <q-icon name="fab fa-google-plus-g" />
                   </button>
                 </div>
               </div>
