@@ -13,7 +13,7 @@
 
 						<div class="col-sm-12 form-group">
 							<p class="caption">Tamanho da Banca</p>
-							<q-field type="tel" label-width="12">
+							<q-field type="tel" pattern="[0-9]*" novalidate label-width="12" sufix=",00">
 								<q-input v-model="tamanho" />
 							</q-field>
 						</div>
