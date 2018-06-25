@@ -14,7 +14,7 @@
 						<div class="col-sm-12 form-group">
 							<p class="caption">Tamanho da Banca</p>
 							<q-field label-width="12">
-								<q-input type="tel" pattern="[0-9]*" novalidate suffix=",00" v-model="tamanho" />
+								<q-input type="tel" pattern="[0-9]*" novalidate prefix="$" suffix=",00" v-model="tamanho" />
 							</q-field>
 						</div>
 
@@ -26,30 +26,37 @@
 						</div>
 
 						<div class="col-sm-12 form-group">
+							<p class="caption">Qual será o seu risco mínimo por {{ periodoSelecionado }}?</p>
+							<q-field label-width="12">
+								<q-input type="tel" pattern="[0-9]*" novalidate  v-model="risco_minimo" />
+							</q-field>
+						</div>
+
+						<div class="col-sm-12 form-group">
 							<p class="caption">Qual será o seu risco máximo por {{ periodoSelecionado }}?</p>
 							<q-field label-width="12">
-								<q-input v-model="risco_maximo" />
+								<q-input type="tel" pattern="[0-9]*" novalidate  v-model="risco_maximo" />
 							</q-field>
 						</div>
 
 						<div class="col-sm-12 form-group">
 							<p class="caption">Qual é o ratio risco/recompensa esperado?</p>
 							<q-field label-width="12">
-								<q-input v-model="ratio_risco_recompensa" />
+								<q-input type="tel" pattern="[0-9]*" novalidate prefix="1/" v-model="ratio_risco_recompensa" />
 							</q-field>
 						</div> 
 
 						<div class="col-sm-12 form-group">
 							<p class="caption">Quantas posições poderão estar abertas por {{ periodoSelecionado }}?</p>
 							<q-field label-width="12">
-								<q-input v-model="quantidade_posicoes" />
+								<q-input type="tel" pattern="[0-9]*" novalidate prefix v-model="quantidade_posicoes" />
 							</q-field>
 						</div>
 
 						<div class="col-sm-12 form-group">
 							<p class="caption">Quanto de alavancagem você vai utilizar?</p>
 							<q-field label-width="12">
-								<q-input v-model="alavancagem" />
+								<q-input type="tel" pattern="[0-9]*" novalidate prefix="1:" v-model="alavancagem" />
 							</q-field>
 						</div>
 
@@ -86,6 +93,7 @@ export default {
 			periodo: '',
 			nome: '',
 			tamanho: '',
+			risco_minimo: '',
 			risco_maximo: '',
 			ratio_risco_recompensa: '',
 			quantidade_posicoes: '',
