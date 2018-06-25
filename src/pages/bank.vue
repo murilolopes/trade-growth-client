@@ -83,14 +83,14 @@
               <div class="nav-tabs-wrapper">
                   <ul class="nav nav-tabs justify-center" data-tabs="tabs">
                       <li class="nav-item">
-                          <a class="nav-link" @click.prevent="opened = 'hist'" :class="ativo('hist')" data-toggle="tab">
-                              <i class="material-icons">calendar_today</i>
+                          <a class="nav-link" @click.prevent="opened = 'hist'" data-toggle="tab">
+                              <!--<q-icon name="fas fa-calendar-check fa-2x" />-->
                               Histórico
                           <div class="ripple-container"></div></a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active show" @click.prevent="opened = 'atual'" data-toggle="tab">
-                              <i class="material-icons">chat</i>
+                              <!--<i class="material-icons">chat</i>-->
                               Mês Corrente
                           <div class="ripple-container"></div></a>
                       </li>
