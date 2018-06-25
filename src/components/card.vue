@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="col-md-4">
-      <q-card color="white" text-color="primary" inline class="q-ma-sm">
+      <q-card inline class="q-ma-sm">
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
@@ -20,7 +20,7 @@
       </q-card>
     </div>
     <div class="col-md-4">
-      <q-card color="white" text-color="primary" inline class="q-ma-sm">
+      <q-card inline class="q-ma-sm">
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
@@ -30,7 +30,7 @@
           </span>
         </q-card-title>
         </q-card-media>
-        <q-card-separator style="background-color: black"/>
+        <q-card-separator />
         <q-card-actions class="justify-center">
           <q-btn flat color="primary" icon="fas fa-eye" to="/bank" />
           <q-btn flat color="primary" icon="fas fa-edit" />

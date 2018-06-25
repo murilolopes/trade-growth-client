@@ -13,7 +13,7 @@
 
 						<div class="col-sm-12 form-group">
 							<p class="caption">Tamanho da Banca</p>
-							<q-field type="number" label-width="12">
+							<q-field type="tel" label-width="12">
 								<q-input v-model="tamanho" />
 							</q-field>
 						</div>
