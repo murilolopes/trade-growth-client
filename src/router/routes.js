@@ -12,7 +12,8 @@ export default [
     children: [
       { path: '', component: () => import('pages/bank') },
       { path: 'week', component: () => import('pages/week') },
-      { path: 'trade', component: () => import('pages/trade') }
+      { path: 'trade', component: () => import('pages/trade') },
+      { path: 'new', component: () => import('pages/form-bank') },
     ]
   },
   {

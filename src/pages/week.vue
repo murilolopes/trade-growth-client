@@ -57,46 +57,46 @@
 						<ul class="nav nav-tabs justify-center" data-tabs="tabs">
 							<li class="nav-item">
 								<a class="nav-link" data-toggle="tab" @click.prevent="opened = 'resumo'" >
-									<q-icon name="far fa-edit" />
-									Resumo
-									<div class="ripple-container"></div></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" data-toggle="tab" @click.prevent="opened = 'trades'" >
-										<q-icon name="fas fa-list-ol" />
-										Trades
-										<div class="ripple-container"></div></a>
-									</li>
-								</ul>
-							</div>
-						</div>
+								<q-icon name="far fa-edit" />
+								Resumo
+								<div class="ripple-container"></div></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" @click.prevent="opened = 'trades'" >
+								<q-icon name="fas fa-list-ol" />
+								Trades
+								<div class="ripple-container"></div></a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<q-btn round color="primary" @click.prevent="method" class="fixed" icon="fas fa-plus" style="right: 18px; bottom: 18px"/>
 			</div>
-		</template>
+		</div>
+		<q-btn round color="primary" @click.prevent="method" class="fixed" icon="fas fa-plus" style="right: 18px; bottom: 18px"/>
+	</div>
+</template>
 
-		<script>
-		import Card from './../components/card.vue'
+<script>
+import Card from './../components/card.vue'
 
-		export default {
-			name: 'Banca',
-			components: {Card},
-			data () {
-				return {
-					stars: 4,
-					opened: 'resumo',
-					basicModal: false,
-					modal: true,
-				}
-			},
-			methods: {
-				ativo(act) {
-					return act == this.opened ? " " : ""
-				},
-				method() {
-					console.log('Adicionar Trade')
-				},
-			}
+export default {
+	name: 'Banca',
+	components: {Card},
+	data () {
+		return {
+			stars: 4,
+			opened: 'resumo',
+			basicModal: false,
+			modal: true,
 		}
-		</script>
+	},
+	methods: {
+		ativo(act) {
+			return act == this.opened ? " " : ""
+		},
+		method() {
+			console.log('Adicionar Trade')
+		},
+	}
+}
+</script>

@@ -8,7 +8,7 @@
 					</q-btn>
 
 					<q-toolbar-title align="center">
-						My Fx Bank
+						My Fx Plan
 					</q-toolbar-title>
 
 					<q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu">
