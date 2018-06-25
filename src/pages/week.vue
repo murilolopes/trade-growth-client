@@ -1,5 +1,5 @@
 <template>
-	<div class="container" style="margin-top: -15px; margin-bottom: 50px; position: fixed">
+	<div class="container" style="margin-top: -15px; margin-bottom: 50px">
 		<div class="card card-nav-tabs">
 			<div class="card-body" style="margin-bottom: 30px">
 				<div class="tab-content text-center">
