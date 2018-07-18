@@ -30,7 +30,7 @@
             <div class="row">
               <q-card class="bigger q-ma-sm col-md-12">
                 <q-card-main>
-                  <h4>Sala VIP <span class="text-green"><q-icon name="attach_money" /> 71.500,00</span></h4>
+                  <h4>Plano 1<span class="text-green"><q-icon name="attach_money"/>71.500,00</span></h4>
                   <p>Informação 1: <strong>texto</strong></p>
                   <p>Informação 2: <strong>texto</strong></p>
                   <p>Informação 3: <strong>texto</strong></p>

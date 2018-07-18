@@ -1,6 +1,6 @@
 <template>
 	<div class="container" style="margin-bottom: 50px">
-		<div class="card card-nav-tabs">
+		<div class="card card-nav-tabs" style="margin-top: 15px">
 			<div class="card-body" style="margin-bottom: 30px">
 				<div class="tab-content text-center">
 					<div class="" id="remuso" v-show="opened == 'resumo'">
@@ -24,34 +24,32 @@
 						</q-card>
 					</div>
 					<br>
-					<div id="trades" v-show="opened == 'trades'">
-						<q-scroll-area style="height: 444px;">
-							<q-collapsible v-for="n in 15">
-								<template slot="header">
-									<q-chip color="primary" small class="q-mr-sm">
-										EUR/USD
-									</q-chip>
-									<q-item-main class="text-red" label="Sell 0.02" />
-								</template>
-								<div>
-									<q-card>
-										<q-card-main>
-											Informações sobre a trade
-										</q-card-main>
-										<q-card-separator />
-										<q-card-actions class="justify-center">
-											<q-btn flat color="primary" icon="fas fa-edit" />
-											<q-btn flat color="primary" icon="fas fa-eye" />
-											<q-btn flat color="primary" icon="fas fa-trash" />
-										</q-card-actions>
-									</q-card>
-								</div>
-							</q-collapsible>							
-						</q-scroll-area>
+					<div id="trades" v-show="opened == 'trades'" v-for="i in 40">
+						<q-collapsible>
+							<template slot="header">
+								<q-chip color="primary" small class="q-mr-sm">
+									EUR/USD
+								</q-chip>
+								<q-item-main class="text-red" label="Sell 0.02" />
+							</template>
+							<div>
+								<q-card>
+									<q-card-main>
+										Informações sobre a trade
+									</q-card-main>
+									<q-card-separator />
+									<q-card-actions class="justify-center">
+										<q-btn flat color="primary" icon="fas fa-edit" />
+										<q-btn flat color="primary" icon="fas fa-eye" />
+										<q-btn flat color="primary" icon="fas fa-trash" />
+									</q-card-actions>
+								</q-card>
+							</div>
+						</q-collapsible>
 					</div>
 				</div>
 			</div>
-			<div class="card-header card-header-primary" align="center" style="margin-bottom: -40px;">
+			<div class="card-header card-header-primary" align="center" style="margin-bottom: 10px; position: fixed; bottom: 0; width: 84%;">
 				<div class="nav-tabs-navigation">
 					<div class="nav-tabs-wrapper">
 						<ul class="nav nav-tabs justify-center" data-tabs="tabs">
@@ -72,7 +70,7 @@
 				</div>
 			</div>
 		</div>
-		<q-btn round color="primary" @click.prevent="method" class="fixed" icon="fas fa-plus" style="right: 18px; bottom: 18px"/>
+		<q-btn round color="primary" @click.prevent="method" class="fixed" icon="fas fa-plus" style="right: 18px; bottom: 90px"/>
 	</div>
 </template>
 
@@ -88,6 +86,7 @@ export default {
 			opened: 'resumo',
 			basicModal: false,
 			modal: true,
+			arr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 		}
 	},
 	methods: {
