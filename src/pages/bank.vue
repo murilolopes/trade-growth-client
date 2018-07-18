@@ -1,7 +1,7 @@
 <template>
-  <div class="container" style="margin-bottom: 50px">
-    <div class="card card-nav-tabs">
-      <div class="card-body" style="margin-bottom: 30px">
+  <div class="container">
+    <div class="card card-nav-tabs" style="margin-top: 15px">
+      <div class="card-body" style="margin-bottom: 60px">
         <div class="tab-content text-center">
           <div class="" id="profile" v-show="opened == 'hist'">
             <q-collapsible popup>
@@ -28,25 +28,35 @@
           </div>
           <div class="" id="messages" v-show="opened == 'atual'">
             <div class="row">
-              <q-card inline class="bigger q-ma-sm">
-                <q-card-title class="relative-position">
-                  <div class="ellipsis">Banca 1</div>
-                  <div slot="right" class="row items-center text-green">
-                    <q-icon name="attach_money" /> 31.500,00
-                  </div>
-                </q-card-title>
+              <q-card class="bigger q-ma-sm col-md-12">
                 <q-card-main>
-                  <p>Risco : 2%</p>
-                  <p class="text-faded">Lote máximo(recomendado): <strong>0.06</strong></p>
-                  <p class="text-faded">Ativo predominante: <strong>USD/CAD</strong></p>
-                  <p class="text-faded">Crescimento médio: <strong><q-icon name="trending_up" />5%</strong> </p>
-                  <p class="text-faded">Quantidade média de pontos: <strong>2700 pts</strong></p>
+                  <h4>Sala VIP <span class="text-green"><q-icon name="attach_money" /> 71.500,00</span></h4>
+                  <p>Informação 1: <strong>texto</strong></p>
+                  <p>Informação 2: <strong>texto</strong></p>
+                  <p>Informação 3: <strong>texto</strong></p>
+                  <p>Informação 4: <strong>texto</strong></p>
                 </q-card-main>
               </q-card>
             </div>
             <br>
             <div class="row">
-              <q-list separator class="col-md-12">
+              <q-list no-border separator class="col-md-12">
+                <q-item @click="method()">
+                  <q-item-main label="01 - 05 Jun"/>
+                  <q-item-side right>
+                    <span class="text-green">
+                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    </span>
+                  </q-item-side>
+                </q-item>
+                <q-item @click="method()">
+                  <q-item-main label="07 - 12 Jun"/>
+                  <q-item-side right>
+                    <span class="text-green">
+                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    </span>
+                  </q-item-side>
+                </q-item>
                 <q-item @click="method()">
                   <q-item-main label="semana 4"/>
                   <q-item-side right>
@@ -56,16 +66,34 @@
                   </q-item-side>
                 </q-item>
                 <q-item>
-                  <q-item-main label="semana 3"/>
-                    <span class="text-red">
-                      -3% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="red"></q-btn>
-                    </span>
-                </q-item>
-                <q-item>
-                  <q-item-main label="semana 2"/>
+                  <q-item-main label="semana 1"/>
                   <span class="text-green">
-                    +12% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    +8% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
                   </span>
+                </q-item>
+                <q-item @click="method()">
+                  <q-item-main label="01 - 05 Jun"/>
+                  <q-item-side right>
+                    <span class="text-green">
+                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    </span>
+                  </q-item-side>
+                </q-item>
+                <q-item @click="method()">
+                  <q-item-main label="07 - 12 Jun"/>
+                  <q-item-side right>
+                    <span class="text-green">
+                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    </span>
+                  </q-item-side>
+                </q-item>
+                <q-item @click="method()">
+                  <q-item-main label="semana 4"/>
+                  <q-item-side right>
+                    <span class="text-green">
+                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    </span>
+                  </q-item-side>
                 </q-item>
                 <q-item>
                   <q-item-main label="semana 1"/>
@@ -78,7 +106,7 @@
           </div>
         </div>
       </div>
-      <div class="card-header card-header-primary" align="center" style="margin-bottom: -40px;">
+      <div class="card-header card-header-primary" align="center" style="margin-bottom: 10px; position: fixed; bottom: 0; width: 84%;">
           <div class="nav-tabs-navigation">
               <div class="nav-tabs-wrapper">
                   <ul class="nav nav-tabs justify-center" data-tabs="tabs">
@@ -99,7 +127,7 @@
           </div>
       </div>
     </div>
-    <q-btn round color="primary" @click.prevent="method" class="fixed" icon="fa fa-plus" style="right: 18px; bottom: 18px"/>
+    <q-btn round color="primary" @click.prevent="method" class="fixed" icon="fa fa-plus" style="right: 18px; bottom: 90px"/>
   </div>
 </template>
 
