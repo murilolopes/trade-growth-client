@@ -6,19 +6,19 @@
 					<div class="" id="remuso" v-show="opened == 'resumo'">
 						<q-card inline class="col-md-4 col-sm-4">
 							<q-card-title class="relative-position">
-								Semana 4
+								01 - 06 Jun
 								<div slot="right" class="text-green">
-									+5%
+									+3%
 								</div>
 							</q-card-title>
 							<q-card-main>
 								<div>
-									<p>Lote médio: <strong>0.06</strong></p>
-									<p>Ativo predominante: <strong>USD/CAD</strong></p>
-									<p>Média de lucro por trade: <strong><q-icon name="attach_money" />12,28</strong> </p>
-									<p>Média de pontos por trade: <strong>270</strong></p>
-									<p>Maior lucro: <strong><q-icon name="attach_money" />25</strong> </p>
-									<p>Maior perda: <strong><q-icon name="attach_money" />7</strong> </p>
+									<p>Média de pips por trade: <strong>35 pips</strong></p>
+									<p>Paridade predominante: <strong>USD/CAD</strong></p>
+									<p>Paridade de maior lucro: <strong>USD/CHF</strong></p>
+									<p>Maior lucro: <strong>$7,50 (55 pips)</strong> </p>
+									<p>Paridade de maior perda: <strong>BRL/BRL</strong></p>
+									<p>Maior perda: <strong>$4,50 (20 pips)</strong> </p>
 								</div>
 							</q-card-main>
 						</q-card>

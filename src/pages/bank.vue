@@ -31,10 +31,10 @@
               <q-card class="bigger q-ma-sm col-md-12">
                 <q-card-main>
                   <h4>Plano 1<span class="text-green"><q-icon name="attach_money"/>71.500,00</span></h4>
-                  <p>Informação 1: <strong>texto</strong></p>
-                  <p>Informação 2: <strong>texto</strong></p>
-                  <p>Informação 3: <strong>texto</strong></p>
-                  <p>Informação 4: <strong>texto</strong></p>
+                  <p>Crescimento: <strong class="text-green">6%</strong></p>
+                  <p>Risco avaliado: <strong>4 - 8%</strong></p>
+                  <p>Paridade predominante: <strong>Não disponivel</strong></p>
+                  <p>Pontuação média do mês: <strong>750 pips</strong></p>
                 </q-card-main>
               </q-card>
             </div>
@@ -42,63 +42,33 @@
             <div class="row">
               <q-list no-border separator class="col-md-12">
                 <q-item @click="method()">
-                  <q-item-main label="01 - 05 Jun"/>
+                  <q-item-main label="01 - 06 Jun"/>
                   <q-item-side right>
                     <span class="text-green">
-                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                      +3% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
                     </span>
                   </q-item-side>
                 </q-item>
                 <q-item @click="method()">
-                  <q-item-main label="07 - 12 Jun"/>
+                  <q-item-main label="08 - 13 Jun"/>
                   <q-item-side right>
-                    <span class="text-green">
-                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    <span class="text-red">
+                      -2% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="red"></q-btn>
                     </span>
                   </q-item-side>
                 </q-item>
                 <q-item @click="method()">
-                  <q-item-main label="semana 4"/>
+                  <q-item-main label="15 - 20 Jun"/>
                   <q-item-side right>
                     <span class="text-green">
-                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                      +7% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
                     </span>
                   </q-item-side>
                 </q-item>
                 <q-item>
-                  <q-item-main label="semana 1"/>
+                  <q-item-main label="22 - 27 Jun"/>
                   <span class="text-green">
-                    +8% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
-                  </span>
-                </q-item>
-                <q-item @click="method()">
-                  <q-item-main label="01 - 05 Jun"/>
-                  <q-item-side right>
-                    <span class="text-green">
-                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
-                    </span>
-                  </q-item-side>
-                </q-item>
-                <q-item @click="method()">
-                  <q-item-main label="07 - 12 Jun"/>
-                  <q-item-side right>
-                    <span class="text-green">
-                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
-                    </span>
-                  </q-item-side>
-                </q-item>
-                <q-item @click="method()">
-                  <q-item-main label="semana 4"/>
-                  <q-item-side right>
-                    <span class="text-green">
-                      +5% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
-                    </span>
-                  </q-item-side>
-                </q-item>
-                <q-item>
-                  <q-item-main label="semana 1"/>
-                  <span class="text-green">
-                    +8% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
+                    +12% <q-btn round dense to="/bank/week" icon="fas fa-eye" text-color="green"></q-btn>
                   </span>
                 </q-item>
               </q-list>

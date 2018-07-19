@@ -5,7 +5,7 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank 1 ($ 1.500,00)
+          Plano 1 ($ 1.500,00)
           <span slot="right" class="row items-center text-green">
             +5%
           </span>
@@ -24,7 +24,7 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank 2 ($ 740,00)
+          Plano 2 ($ 740,00)
           <span slot="right" class="row items-center text-red">
             -2%
           </span>
@@ -43,7 +43,7 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank 3 ($ 3.258,00)
+          Plano 3 ($ 3.258,00)
           <span slot="right" class="row items-center text-green">
             +12%
           </span>
@@ -62,7 +62,7 @@
         <q-card-media>
           <img src="~assets/img/bg.jpg">
         <q-card-title>
-          Bank Name ($ 0,00)
+          Nome do plano ($ 0,00)
           <span slot="right" class="row items-center text-green">
             +0%
           </span>
