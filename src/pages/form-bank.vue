@@ -6,7 +6,7 @@
 					<div class="row">
 						<div class="col-sm-12 form-group">
 							<p class="caption">Nome do Plano</p>
-							<q-field label-width="12">
+							<q-field label-width="12" :count="10">
 								<q-input v-model="nome" />
 							</q-field>
 						</div>
@@ -38,13 +38,6 @@
 								<q-input type="tel" pattern="[0-9]*" novalidate prefix="1/" v-model="ratio_risco_recompensa" />
 							</q-field>
 						</div> 
-
-						<div class="col-sm-12 form-group">
-							<p class="caption">Quantas posições pretende abrir?</p>
-							<q-field label-width="12">
-								<q-input type="tel" pattern="[0-9]*" novalidate prefix v-model="quantidade_posicoes" />
-							</q-field>
-						</div>
 
 						<div class="col-sm-12 form-group">
 							<p class="caption">Qual alavancagem pretende utilizar?</p>
@@ -83,13 +76,11 @@ export default {
 				value: 'mes'
 			},
 			],
-			periodo: '',
 			nome: '',
 			tamanho: '',
 			risco_minimo: '',
 			risco_maximo: '',
 			ratio_risco_recompensa: '',
-			quantidade_posicoes: '',
 			alavancagem: '',
 		}
 	},
