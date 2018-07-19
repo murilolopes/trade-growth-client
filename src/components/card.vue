@@ -14,7 +14,7 @@
         <q-card-separator />
         <q-card-actions class="justify-center" color="red">
           <q-btn flat color="primary" icon="fas fa-eye" to="/bank" />
-          <q-btn flat color="primary" icon="fas fa-edit" />
+          <q-btn flat color="primary" icon="fas fa-edit" to="/bank/edit"/>
           <q-btn flat color="primary" icon="fas fa-trash" />
         </q-card-actions>
       </q-card>

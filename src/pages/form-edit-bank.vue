@@ -48,8 +48,8 @@
 
 						<div class="col-sm-12 form-group">
 							<br>
-							<button @click.prevent="cadastrar()" class="btn btn-link btn-outline-primary btn">Adicionar</button>
-							<button @click.prevent="voltar()" class="btn btn-link btn-outline-default btn">Voltar</button>
+							<button @click.prevent="atualizar()" class="btn btn-link btn-outline-primary btn">Atualizar</button>
+							<button @click.prevent="$router.go(-1)" class="btn btn-link btn-outline-default btn">Voltar</button>
 						</div>
 					</div>
 				</div>
@@ -59,6 +59,7 @@
 </template>
 
 <script>
+
 export default {
 	data () {
 		return {
@@ -76,20 +77,19 @@ export default {
 				value: 'mes'
 			},
 			],
-			nome: '',
-			tamanho: '',
-			risco_minimo: '',
-			risco_maximo: '',
-			ratio_risco_recompensa: '',
-			alavancagem: '',
+			nome: 'Plano 1',
+			tamanho: '1500',
+			risco_minimo: '5',
+			risco_maximo: '8',
+			ratio_risco_recompensa: '3',
+			alavancagem: '400',
 		}
 	},
 	methods: {
-		cadastrar () {
-			console.log('Cadastrando nova banca')
+		atualizar () {
+			console.log('opa')
 		},
-		voltar () {
-			this.$router.go(-1)
+		cancelar () {
 			console.log('Limpar form e retornar para a tela anterior')
 		},
 	},

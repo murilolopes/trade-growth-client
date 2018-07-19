@@ -97,7 +97,7 @@
           </div>
       </div>
     </div>
-    <q-btn round color="primary" @click.prevent="method" class="fixed" icon="fa fa-plus" style="right: 18px; bottom: 90px"/>
+    <q-btn round color="primary" to="bank/add-trade" class="fixed" icon="fa fa-plus" style="right: 18px; bottom: 90px"/>
   </div>
 </template>
 
